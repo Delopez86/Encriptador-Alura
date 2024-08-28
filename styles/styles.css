@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+body{
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+.imagen_logo{
+    padding: 1.2% 1.2%;
+    width: 7%;
+    height: 45%;
+}
+
+.presentacion{
+    display: flex;
+    gap: 100px;
+}
+
+.presentacion_contenido{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+}
+
+.advertencia{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.imagen_exclamacion{
+    width: 16px;
+    height: 16px;
+}
+
+.texto_advertencia{
+    font-size: 0.75rem;
+    font-family: "Inter", sans-serif;
+    color: gray;
+}
+
+.entrada{
+    background-color: #E5E5E5;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 42rem;
+    height: 500px;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    color: darkblue;
+}
+
+::placeholder{
+    color: darkblue;
+}
+
+.div_botones{
+    display: flex;
+    gap: 24px;
+}
+
+.boton_encriptar{
+    color: white;
+    background-color: darkblue;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    height: 67px;
+}
+
+.boton_copiar{
+    display: none;
+    color: darkblue;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 70%;    
+    height: 67px;
+}
+
+.boton_desencriptar{
+    color: darkblue;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 50%;    
+    height: 67px;
+}
+
+.respuesta{
+    font-family: "Inter", sans-serif;
+    display: none;
+    width: 70%;
+    height: 580px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 24px;
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.oculto{
+    display: none;
+}
+
+.imagen_muñeco{
+    width: 80%;  
+}
+
+.estado{
+    
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+.indicacion{
+    padding: 3.5%;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.seccion_respuesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 640px;
+    border-radius: 32px;
+    width: 35%;
+    margin: 2%;
+    padding: 2%;
+    gap: 8px;
+}
+
+@media (max-width: 1024px){
+
+    .presentacion{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+        gap: 3%;
+    }
+
+    body{
+        margin: 0;
+        padding: 3%;
+    }
+
+    .entrada{
+        padding-top: 10%;
+        height: 30%;
+    }
+
+    .imagen_muñeco{
+        display: none;
+    }
+    .seccion_respuesta{
+        width: 90%;
+        height: 300px;
+    }
+}
